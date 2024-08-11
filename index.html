@@ -5,203 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project2</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Link Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="technical.jpg" type="image">
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-    <div class="hii">
-        <div class="header">
-            <header class="header-content">
-                <a href="#logo" class="logo">
-                    <img src="monstertrio.jpg" alt="logoImage" class="logo-icon">
-                    <span class="logo-text">Monsters Trio</span>
-                </a>
-
-                <nav class="nav">
-                    <a href="course.html" class="nav-link">Free courses</a>
-                    <a href="features1.html" class="nav-link">Features</a>
-                    <a href="knowledge.html" class="nav-link">Knowledge</a>
-                    <a href="gridproject.html" class="nav-link">NewsLetter</a>
-                    <a href="keyproblems.html" class="nav-link">Key Problems</a>
-                </nav>
-
-                <a href="contact1.html" class="contact-button">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <a href="#logo" class="flex items-center space-x-2">
+                <img src="monstertrio.jpg" alt="logoImage" class="w-10 h-10">
+                <span class="text-xl font-bold">Monsters Trio</span>
+            </a>
+            <nav id="nav-menu" class="hidden md:flex space-x-6">
+                <a href="course.html" class="text-gray-600 hover:text-blue-500">Free courses</a>
+                <a href="features1.html" class="text-gray-600 hover:text-blue-500">Features</a>
+                <a href="knowledge.html" class="text-gray-600 hover:text-blue-500">Knowledge</a>
+                <a href="gridproject.html" class="text-gray-600 hover:text-blue-500">NewsLetter</a>
+                <a href="keyproblems.html" class="text-gray-600 hover:text-blue-500">Key Problems</a>
+                <a href="contact1.html" class="block md:hidden bg-blue-500 text-white px-4 py-2 rounded">
                     Contact Us
                 </a>
-
-                <button class="button" value="button">
-                    <img src="technical2.jpg" class="menu-icon">
-                </button>
-            </header>
+            </nav>
+            <!-- <a href="contact1.html" class="hidden md:inline-block bg-blue-500 text-white px-4 py-2 rounded">
+                Contact Us
+            </a> -->
+            <button id="menu-toggle" class="md:hidden">
+                <img src="technical2.jpg" class="w-8 h-8">
+            </button>
         </div>
+    </header>
 
-        <div class="container">
-            <section class="main-content">
-
-                <div class="leftbox">
-                    <p class="para1">Empowering Youth Finance :</p>
-                    <h1 class="heading1">What Is Finance ?</h1>
-                    <p class="para2">Finance is a broad term that refers to the management of money and other assets. It
-                        involves activities such as investing, borrowing, lending, budgeting, saving, and managing
-                        risks. Finance encompasses both personal finance, which deals with individuals managing their
-                        own money, and corporate finance, which involves businesses managing their financial resources.
-                    </p>
-                    <div class="leftsection">
-                        <a href="login.html" class="start-button">Login </a>
-                        <a href="signup.html" class="tour-button">Sign up</a>
-                    </div>
-                </div>
-
-                <div class="rightbox">
-                    <div class="imagesection">
-                        <img src="financial.jpg" alt="image1" class="image-1">
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container2">
-            <h3 class="heading2">Trusted Brokers</h3>
-
-            <div class="grid-box">
-
-                <div class="column1">
-                    <img src="grow.jpg" class="img">
-                    <span><a href="https://groww.in/" class="anchor">Groww</a></span>
-                </div class="column2">
-
-                <div>
-                    <img src="angleone.jpg" class="img">
-                    <span><a href="https://www.angelone.in/" class="anchor">AngleOne</a></span>
-                </div>
-
-                <div class="column3">
-                    <img src="zerodha.jpg" class="img">
-                    <span><a href="https://zerodha.com/" class="anchor">Zerodha</a></span>
-                </div>
-
-                <div class="column4">
-                    <img src="technical.jpg" class="img">
-                    <span><a href="tradingview.jpg" class="anchor">Trading View</a></span>
-                </div>
-
+    <main class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <p class="text-lg font-semibold text-blue-500">Empowering Youth Finance :</p>
+            <h1 class="text-3xl font-bold mb-4">What Is Finance?</h1>
+            <p class="text-gray-700 mb-6">Finance is a broad term that refers to the management of money and other
+                assets. It involves activities such as investing, borrowing, lending, budgeting, saving, and managing
+                risks...</p>
+            <div class="space-x-4">
+                <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded">Login</a>
+                <a href="signup.html" class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Sign up</a>
             </div>
         </div>
-    </div>
+        <div>
+            <img src="financial.jpg" alt="image1" class="w-full h-auto rounded shadow">
+        </div>
+    </main>
 
-    <div class="container3">
-        <h3 class="heading2">Our Competative Advantagas</h3>
-        <p class="para3">The competitive advantage of finance refers to the strategic use of financial resources,
-            knowledge, and capabilities to gain a favorable position over competitors in the market. Companies with
-            strong financial positions have easier access to capital, whether through debt financing (loans, bonds) or
-            equity financing (issuing stocks).</p>
-        <div class="grid2">
-            <div class="newitem" id="item1">
-                <img class="imgitem1" src="settinggoal.jpg">
-                <p class="para4">SETTING UP GOALS</p>
-                <p class="paar5">Setting goals in finance is crucial for individuals and organizations alike to
-                    establish clear objectives and create a roadmap for financial success</p>
+    <section class="container mx-auto px-4 py-10">
+        <h3 class="text-2xl font-semibold mb-6">Trusted Brokers</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <img src="grow.jpg" class="w-full h-40 object-cover rounded mb-4">
+                <a href="https://groww.in/" class="text-blue-500">Groww</a>
             </div>
-            <div class="newitem" id="item2">
-                <img class="imgitem1" src="pricing.jpg">
-                <p class="para4">BETTER PRICING</p>
-                <p class="paar5">By effectively pricing products or services, businesses can optimize their revenue
-                    potential.Better pricing allows businesses to maintain the perceived value.</p>
+            <div class="text-center">
+                <img src="angleone.jpg" class="w-full h-40 object-cover rounded mb-4">
+                <a href="https://www.angelone.in/" class="text-blue-500">AngleOne</a>
             </div>
-            <div class="newitem" id="item3">
-                <img class="imgitem1" src="stock3.jpg">
-                <p class="para4">STRUCTURED LEARNING</p>
-                <p class="paar5">Structured learning in finance involves educational programs courses designed to
-                    individuals with a understanding of financial concepts, tools, and techniques.</p>
+            <div class="text-center">
+                <img src="zerodha.jpg" class="w-full h-40 object-cover rounded mb-4">
+                <a href="https://zerodha.com/" class="text-blue-500">Zerodha</a>
             </div>
-            <div class="newitem" id="item4">
-                <img class="imgitem1" src="stock2.jpg">
-                <p class="para4">TRADING ENVIRONMENT</p>
-                <p class="paar5">The trading environment in finance refers to the ecosystem or context within which
-                    buying and selling of financial instruments, and derivatives, takes place.</p>
-            </div>
-            <div class="newitem" id="item5">
-                <img class="imgitem1" src="expertadvice.jpg">
-                <p class="para4">EXPERT<sup>s</sup> ADVICE</p>
-                <p class="paar5">Expert advice in finance plays a crucial role in helping individuals and organizations
-                    make informed decisions, manage risks, and achieve their financial goals.</p>
-            </div>
-            <div class="newitem" id="item6">
-                <img class="imgitem1" src="stock1.jpg">
-                <p class="para4">STOCK ANALYSIS</p>
-                <p class="paar5">In finance, "stocks" refer to shares of ownership in a publicly company. When a company
-                    decides to raise capital it divides its ownership into smaller portions called stocks.</p>
+            <div class="text-center">
+                <img src="technical.jpg" class="w-full h-40 object-cover rounded mb-4">
+                <a href="tradingview.jpg" class="text-blue-500">Trading View</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="onemore">
-        <div class="container4">
-            <h3 class="heading3">Founders</h3>
-            <div class="flex2">
-                <div class="part" id="part1">
-                    <p class="para6">Have basic knowledge of stock market. intraday trader and option trader</p>
-                    <img class="image-2" src="founder1.jpg">
-                    <div class="paragraph">
-                        <p class="paragraph1">
-                            Abhishek Singh
-                        </p>
-                        <p class="paragraph2">
-                            Stocks expert
-                        </p>
-                    </div>
-                </div>
-                <div class="part" id="part2">
-                    <p class="para6">Have good analyzing skills, have good expertise in reading balance sheet of
-                        Companies</p>
-                    <img class="image-2" src="founder3.jpg">
-                    <div class="paragraph">
-                        <p class="paragraph1">
-                            Divyansh Garg
-                        </p>
-                        <p class="paragraph2">
-                            Trading Analyst
-                        </p>
-                    </div>
-                </div>
-                <div class="part" id="part3">
-                    <p class="para6">Have 3 years of experience in us market specially (US 30, NASDAQ 100) and Have 2
-                        year expertise in XAUUSD(gold)</p>
-                    <img class="image-2" src="founder2.jpg">
-                    <div class="paragraph">
-                        <p class="paragraph1">
-                            Hemant Kumar
-                        </p>
-                        <p class="paragraph2">
-                            US Market Trader
-                        </p>
-                    </div>
-                </div>
+    <section class="container mx-auto px-4 py-10">
+        <h3 class="text-2xl font-semibold mb-6">Our Competitive Advantages</h3>
+        <p class="text-gray-700 mb-8">The competitive advantage of finance refers to the strategic use of financial
+            resources, knowledge, and capabilities to gain a favorable position over competitors in the market...</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="settinggoal.jpg">
+                <p class="text-xl font-semibold mb-2">SETTING UP GOALS</p>
+                <p class="text-gray-700">Setting goals in finance is crucial for individuals and organizations alike to
+                    establish clear objectives...</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="pricing.jpg">
+                <p class="text-xl font-semibold mb-2">BETTER PRICING</p>
+                <p class="text-gray-700">By effectively pricing products or services, businesses can optimize their
+                    revenue potential...</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="stock3.jpg">
+                <p class="text-xl font-semibold mb-2">STRUCTURED LEARNING</p>
+                <p class="text-gray-700">Structured learning in finance involves educational programs and courses
+                    designed to provide individuals with a comprehensive understanding of financial concepts...</p>
             </div>
         </div>
-    </div>
-
-    <div class="container5">
-        <div class="like">
-            <div class="leftside">
-                <img class="left_image" src="image5.jpg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="stock2.jpg">
+                <p class="text-xl font-semibold mb-2">TRADING ENVIRONMENT</p>
+                <p class="text-gray-700">The trading environment in finance refers to the ecosystem or context within
+                    which buying and selling of financial instruments take place...</p>
             </div>
-            <div class="right_side">
-                <h1 class="right_heading">Get The Latest Update</h1>
-                <p class="right_para1">Sign up For Our Newsletter</p>
-                <div class="input_thing">
-                    <input class="input_data" type="text" placeholder="E-mail">
-                    <button class="button1">send</button>
-                </div>
-                <p class="right_para2">By sigining to our NewsLetter ypu agree to our <a href="#Terms"
-                        class="right_link1">Terms Of Service </a>and
-                    <a href="#Policy" class="right_link2">Privacy Policy</a> .
-                </p>
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="expertadvice.jpg">
+                <p class="text-xl font-semibold mb-2">EXPERT ADVICE</p>
+                <p class="text-gray-700">Expert advice in finance plays a crucial role in helping individuals and
+                    organizations make informed decisions, manage risks, and achieve their financial goals...</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img class="w-full h-40 object-cover rounded mb-4" src="stock1.jpg">
+                <p class="text-xl font-semibold mb-2">STOCK ANALYSIS</p>
+                <p class="text-gray-700">In finance, "stocks" refer to shares of ownership in a publicly traded
+                    company...</p>
             </div>
         </div>
-    </div>
-    </div>
-</body>
+    </section>
 
+    <section class="container mx-auto px-4 py-10">
+        <h3 class="text-2xl font-semibold mb-6">Founders</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow text-center">
+                <p class="text-gray-700 mb-4">Have basic knowledge of stock market, intraday trader and option trader</p>
+                <img class="w-32 h-32 object-cover rounded-full mx-auto mb-4" src="founder1.jpg">
+                <p class="text-xl font-semibold">Abhishek Singh</p>
+                <p class="text-blue-500">Stocks expert</p>
+            </div>
+        </section>
+        </body>
 </html>
